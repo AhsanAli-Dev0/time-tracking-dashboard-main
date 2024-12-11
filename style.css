@@ -1,0 +1,123 @@
+body{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+  background: black !important;
+}
+
+ 
+/* .content-wrraper{
+  display: grid;
+}
+aside{
+  grid-column: 1/2;
+}
+main{
+  grid-column: 2/12;
+} */
+aside img{
+  width: 40%;
+  padding: 16px 0px;
+}
+.card-wrraper{
+  background: #584786;
+  border-radius: 23px;
+}
+.user-card{
+  background: blue;
+  padding:6px 0px 6px 14px;
+  border-radius: 23px;
+}
+.user-card h6{
+  color: wheat;
+  font-family: "Rubik", ssans-sarif;
+  font-size: 10px;
+}
+.user-card p{
+  color: white;
+  font-family: "Rubik", ssans-sarif;
+  font-size: 26px;
+  text-transform: capitalize;
+}
+
+.packegs{
+  background: #584786;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  padding: 6px 0px 6px 14px;
+}
+.packegs h3{
+  font-family: "Rubik", sans-sarif;
+ color: white;
+ font-size: 16px;
+}
+.wrraper{ 
+   background: #584786;
+   border-radius: 23px;
+}
+.work{
+  background: rgb(228, 184, 40);
+  border-radius: 18px;
+  background-image: url(./images/icon-work.svg) no-repeat;
+}
+.play{
+  background: rgb(36, 190, 201);
+  border-radius: 18px;
+  background-image: url(./images/icon-play.svg) no-repeat;
+}
+.study{
+  background: rgb(233, 140, 156);
+  border-radius: 18px;
+  background-image: url(./images/icon-work.svg) no-repeat;
+}
+.exercise{
+  background: rgb(64, 211, 142);
+  border-radius: 18px;
+  background-image: url(./images/icon-work.svg) no-repeat;
+}
+.social{
+  background: rgb(185, 93, 221);
+  border-radius: 18px;
+  background-image: url(./images/icon-work.svg) no-repeat;
+}
+.slef-care{
+  background: rgb(243, 182, 16);
+  border-radius: 18px ;
+  background-image: url(./images/icon-work.svg) no-repeat;
+}
+
+.outer-card img{
+  width: 15%;
+}
+
+.inner-card{
+  background: #584786;
+  border-radius: 18px;
+  padding: 41px 14px;
+  
+}
+.inner-card .containt .title{
+  color: white;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+}
+.containt .hours h4{
+  font-family: "Rubik", sans-serif;
+  color: wheat;
+  font-size: 26px;
+}
+.last-week h6{
+  color: white;
+}
+.active{
+  color:#010200 !important;
+}
+ .buttons a{
+  padding-top: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.buttons{
+  padding: 8px 0px;
+}

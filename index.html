@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 14px; text-align: center; }
+    .attribution a { color: hsl(227, 69%, 97%); }
+    .footer{color:white; margin-top: 28px;}
+  </style>
+</head>
+<body>
+  <div class="content-wrraper">
+    <div class="container mt-5">
+      <div class="row">
+    <div class="col-md-4">
+  <aside>
+  <div class="container">
+    <div class="card-wrraper">
+    <div class="user-card">
+      <div class="card-img">
+        <img src="./images/image-jeremy.png" alt="jeremy img">
+      </div>
+      <div class="card-title">
+        <h6>
+          Report for
+        </h6>
+      </div>
+      <div class="card-text">
+        <p>Jeremy <span class="d-block">Robson</span></p>
+      </div>
+      
+    </div>
+    <div class="packegs">
+     
+      
+      <div class="buttons gap-1">
+        <a class="d-block mt-3 text-start" data-bs-toggle="collapse" href="#daily" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <h3 id="dailybtn">daily</h3>
+        </a>
+        <a class=" d-block mt-3 text-start" data-bs-toggle="collapse" href="#weekly" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <h3 id="weeklybtn">weekly</h3>
+        </a>
+        <a class=" d-block mt-3 text-start"  data-bs-toggle="collapse" href="#monthly" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <h3 id="monthlybtn">monthly</h3>
+        </a>
+      </div>
+      <div>
+
+      </div>
+    </div>
+  </div>
+</div>
+  </aside>
+</div>
+<div class="col-md-8">
+  <main>
+<!-- daily start -->
+  <div class="row collapse show"  id="daily">
+      <div class="col-md-4 mt-3">
+        <div class="wrraper work">
+      <div class="outer-card text-end ">
+        <img class="" src="./images/icon-work.svg" alt="work">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Work <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>32hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6>Last week-36hrs</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mt-3">
+        <div class="wrraper play">
+      <div class="outer-card text-end ">
+        <img class="" src="./images/icon-play.svg" alt="play">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Play <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>10hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6>Last week-8hrs</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mt-3">
+        <div class="wrraper study">
+      <div class="outer-card text-end ">
+        <img class="" src="./images/icon-work.svg" alt="">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Study <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>7hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6>Last week-4hrs</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mt-3">
+        <div class="wrraper exercise">
+      <div class="outer-card text-end py-2">
+        <img class="" src="./images/icon-exercise.svg" alt="Exercise">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Exercise <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>4hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6>Last week-5hrs</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mt-3">
+        <div class="wrraper social">
+      <div class="outer-card text-end ">
+        <img class="" src="./images/icon-social.svg" alt="Social">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Social <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>5hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6>Last week-10hrs</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mt-3">
+        <div class="wrraper slef-care">
+      <div class="outer-card text-end py-2">
+        <img class="" src="./images/icon-self-care.svg" alt="Self">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Self Care <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>2hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6>Last week-2hrs</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+<!-- daily end -->
+<!-- weekly start -->
+  <div class="row collapse"  id="weekly">
+      <div class="col-md-4 mt-3">
+        <div class="wrraper work">
+      <div class="outer-card text-end ">
+        <img class="" src="./images/icon-work.svg" alt="work">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Work <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>32hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6>Previous - 36hrs </h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mt-3">
+        <div class="wrraper play">
+      <div class="outer-card text-end ">
+        <img class="" src="./images/icon-play.svg" alt="play">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Play <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>10hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6>Previous - 8hrs </h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mt-3">
+        <div class="wrraper study">
+      <div class="outer-card text-end ">
+        <img class="" src="./images/icon-work.svg" alt="">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Study <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>4hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6> Previous - 7hrs</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mt-3">
+        <div class="wrraper exercise">
+      <div class="outer-card text-end py-2">
+        <img class="" src="./images/icon-exercise.svg" alt="Exercise">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Exercise <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>4hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6>Previous - 5hrs</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mt-3">
+        <div class="wrraper social">
+      <div class="outer-card text-end ">
+        <img class="" src="./images/icon-social.svg" alt="Social">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Social <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>5hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6>Previous - 10hrs</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mt-3">
+        <div class="wrraper slef-care">
+      <div class="outer-card text-end py-2">
+        <img class="" src="./images/icon-self-care.svg" alt="Self">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Self Care <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>2hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6>Previous - 2hrs</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+<!-- weekly end -->
+<!-- weekly start -->
+  <div class="row collapse"  id="monthly">
+      <div class="col-md-4 mt-3">
+        <div class="wrraper work">
+      <div class="outer-card text-end ">
+        <img class="" src="./images/icon-work.svg" alt="work">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Work <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4> Previous - 2hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6> Previous - 128hrs</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mt-3">
+        <div class="wrraper play">
+      <div class="outer-card text-end ">
+        <img class="" src="./images/icon-play.svg" alt="play">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Play <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>23hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6> Previous - 29hrs</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mt-3">
+        <div class="wrraper study">
+      <div class="outer-card text-end ">
+        <img class="" src="./images/icon-work.svg" alt="">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Study <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>13hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6>Previous - 19hrs</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mt-3">
+        <div class="wrraper exercise">
+      <div class="outer-card text-end py-2">
+        <img class="" src="./images/icon-exercise.svg" alt="Exercise">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Exercise <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>11hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6>Previous - 18hrs</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mt-3">
+        <div class="wrraper social">
+      <div class="outer-card text-end ">
+        <img class="" src="./images/icon-social.svg" alt="Social">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Social <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>21hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6>Previous - 23hrs</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mt-3">
+        <div class="wrraper slef-care">
+      <div class="outer-card text-end py-2">
+        <img class="" src="./images/icon-self-care.svg" alt="Self">
+      </div>
+        <div class="inner-card">
+          <div class="containt">
+         <h4 class="title d-flex justify-content-between align-item-center">Self Care <span class="text-end"><b>...</b></span></h4>
+         <div class="hours">
+          <h4>7hrs</h4>
+        </div>
+        <div class="last-week">
+          <h6>Previous - 11hrs monthly</h6>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+<!-- weekly end -->
+  </main>
+</div>
+</div>
+</div>
+</div>  
+
+  <div class="attribution">
+  <div class="footer"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/AhsanAli-Dev0">Ahsan Ali</a>.</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    const daily = document.querySelector('#daily');
+    const weekly = document.querySelector('#weekly');
+    const monthly = document.querySelector('#monthly');
+     
+    const dailybtn = document.querySelector('#dailybtn')
+    const weeklybtn = document.querySelector('#weeklybtn')
+    const monthlybtn = document.querySelector('#monthlybtn')
+
+    function RemoveClass() {
+      daily.classList.remove('show')
+      weekly.classList.remove('show')
+      monthly.classList.remove('show')
+      dailybtn.classList.remove('active')
+      weeklybtn.classList.remove('active')
+      monthlybtn.classList.remove('active')
+
+    }
+   dailybtn.addEventListener('click', ()=>{
+    RemoveClass()
+    if (!daily.classList.contains('show')) {
+      
+      daily.classList.add('show')
+      dailybtn.classList.add('active')
+    }
+   })    
+   weeklybtn.addEventListener('click', ()=>{
+    RemoveClass()
+    if (!weekly.classList.contains('show')) {
+      weekly.classList.add('show')
+      weeklybtn.classList.add('active')
+      
+    }
+   })    
+   monthlybtn.addEventListener('click', ()=>{
+    RemoveClass()
+    if (!monthly.classList.contains('show')) {
+      monthly.classList.add('show')
+      monthlybtn.classList.add('active')
+      
+    }
+   })    
+ </script>
+</body>
+</html>
